@@ -1,12 +1,7 @@
-<p align="right">
-  🇺🇸 [English](#english-version) | 🇰🇷 [한국어](#한국어-버전)
-</p>
-
 # SkeletonUI
 
----
-
-## 🇺🇸 English Version
+<details open>
+<summary>🇺🇸 English</summary>
 
 A customizable and lightweight skeleton view library for SwiftUI.  
 Perfect for shimmer, pulse, and text placeholder animations during loading states.
@@ -26,7 +21,8 @@ Use Swift Package Manager:
 ```swift
 .package(url: "https://github.com/yohns-dev/SkeletonUI.git", from: "0.1.0")
 ```
-Or in Xcode: 
+Or in Xcode:
+
 | File -> Add Package -> Paste Git URL
 
 ### API Overview
@@ -78,13 +74,13 @@ let controller = SkeletonController(
     animation: .shimmer,
     baseColor: .gray.opacity(0.3),
     highlightColor: .white.opacity(0.5),
-    config: config
 )
 
 VStack {
     Text("Loading...")
         .targetSkeleton()
 }
+.skeletonAnimationConfig(config)
 .skeletonAnimation(controller: controller)
 ```
 
@@ -107,8 +103,10 @@ VStack {
         )
 }
 ```
+</details>
 
-## 🇰🇷 한국어 버전
+<details>
+<summary>🇰🇷 한국어</summary>
 
 SwiftUI용 경량화된 스켈레톤 뷰 라이브러리입니다.
 로딩 상태에서 사용할 수 있는 쉬머, 펄스, 텍스트 애니메이션을 제공합니다
@@ -129,9 +127,10 @@ Swift Package Manager 사용 방법
 ```
 
 Xcode에서 설치 방법
+
 | File -> Add Package -> URL 붙여넣기
 
-### 📘 API 개요
+### API 개요
 
 - `SkeletonController(animation:)`: 스켈레톤 제어 객체
 - `targetSkeleton(...)`: ViewModifier로 타겟 UI 지정
@@ -180,13 +179,13 @@ let controller = SkeletonController(
     animation: .shimmer,
     baseColor: .gray.opacity(0.3),
     highlightColor: .white.opacity(0.5),
-    config: config
 )
 
 VStack {
     Text("Loading...")
         .targetSkeleton()
 }
+.skeletonAnimationConfig(config)
 .skeletonAnimation(controller: controller)
 ```
 
@@ -209,6 +208,7 @@ VStack {
         )
 }
 ```
+</details>
 
 ### Preview
 ## Coming Soon...

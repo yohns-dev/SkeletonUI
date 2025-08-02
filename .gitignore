@@ -1,0 +1,29 @@
+# macOS
+.DS_Store
+
+# SwiftPM
+/.build
+/Package.resolved
+
+# Xcode
+build/
+DerivedData/
+xcuserdata/
+xcshareddata/
+
+# Temporary files
+*.swp
+*.tmp
+*.lock
+
+# User-specific
+.idea/
+.vscode/
+*.xcuserstate
+
+# Tests
+*.xctest
+
+# Playground support (optional)
+timeline.xctimeline
+playground.xcworkspace
